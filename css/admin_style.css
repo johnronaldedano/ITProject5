@@ -23,7 +23,8 @@ body {
     transition: background 0.3s ease-in-out;
 }
 #sidebar .nav-link:hover {
-    background: #e9ecef;
+    background: #88d384;
+    color: black;
 }
 .profile-img {
     width: 40px;
