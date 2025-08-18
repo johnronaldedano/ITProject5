@@ -1,0 +1,26 @@
+# ====================================
+# DBMS2 Project - Git Ignore Settings
+# ====================================
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and error files
+*.log
+error_log
+
+# Node / Composer dependencies (if ever added later)
+node_modules/
+vendor/
+
+# Environment / sensitive configs
+db_connect.php   # real database credentials (keep local only)
+.env
+.env.local
