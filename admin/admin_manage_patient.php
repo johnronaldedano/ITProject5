@@ -16,7 +16,8 @@
         <?php include '../includes/toggle.php'; ?>
         <div class="mb-5 mt-5">
             <h2 class="fw-bold">Dental Patient Record Management System</h2>
-<div class="container-fluid">
+
+            <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <span class="fw-bold fs-5">All Patients:</span>
