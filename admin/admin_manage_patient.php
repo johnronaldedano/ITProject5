@@ -23,8 +23,11 @@
             <span class="fw-bold fs-5">All Patients:</span>
             <span class="text-primary fw-bold">1,356</span>
         </div>
-        <button class="btn btn-primary"><i class="bi bi-person-plus me-2"></i>Add new patient</button>
-    </div>
+<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#addPatientModal">
+  <i class="bi bi-person-plus me-2"></i>Add new patient
+</button>
+
+</div>
     <div class="card p-3">
         <div class="d-flex justify-content-between align-items-center mb-2">
             <div>
@@ -179,12 +182,7 @@
 </div>
 
 
-<script>
-document.querySelector('.btn.btn-primary').addEventListener('click', function(e) {
-  var modal = new bootstrap.Modal(document.getElementById('addPatientModal'));
-  modal.show();
-});
-</script>s
+
 
 <script src="../js/dashboard.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
