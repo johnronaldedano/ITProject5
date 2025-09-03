@@ -5,7 +5,7 @@ body {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #3D3D3D;
+    background: #D92F07; 
     padding: 20px;
     height: 100vh;
     transition: all 0.3s ease-in-out;
@@ -23,7 +23,7 @@ body {
     transition: background 0.3s ease-in-out;
 }
 #sidebar .nav-link:hover {
-    background: #88d384;
+    background: white;
     color: black;
 }
 .profile-img {
@@ -33,7 +33,7 @@ body {
     cursor: pointer;
 }
 .nav-link.active {
-    background: lightgreen !important;
+    background: #FFE736 !important;
     color: black !important;
     font-weight: bold;
     border-radius: 5px;

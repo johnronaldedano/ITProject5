@@ -15,7 +15,7 @@
             <div class="flex-grow-1 p-4">
         <?php include '../includes/toggle.php'; ?>
         <div class="mb-5 mt-5">
-            <h2 class="fw-bold">Dental Patient Record Management System</h2>
+            <h2 class="fw-bold">Family Planning & Birth Home Clinic Management System</h2>
 
 
                      <div class="container-fluid">
@@ -24,7 +24,7 @@
             <span class="fw-bold fs-5">All Dentists:</span>
             <span class="text-primary fw-bold"> 2 </span>
         </div>
-        <button class="btn btn-primary"><i class="bi bi-person-plus me-2"></i>Add new patient</button>
+        <button class="btn btn-primary"><i class="bi bi-person-plus me-2"></i>Add new Midwife</button>
     </div>
     <div class="card p-3">
         <div class="d-flex justify-content-between align-items-center mb-2">
@@ -102,6 +102,99 @@
 
 
 </div>
+
+<!-- Add New Midwife Modal -->
+<div class="modal fade" id="addMidwifeModal" tabindex="-1" aria-labelledby="addMidwifeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content border-0 shadow-lg">
+      
+      <!-- Header with red gradient -->
+      <div class="modal-header text-white" style="background: linear-gradient(135deg, #c62828, #e53935);">
+        <h5 class="modal-title fw-bold d-flex align-items-center" id="addMidwifeModalLabel">
+          <i class="bi bi-person-heart me-2"></i> Add New Midwife
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <form id="addMidwifeForm" method="post" action="add_midwife.php">
+        <div class="modal-body">
+          <div class="row g-3">
+            
+            <!-- Full name broken into parts -->
+            <div class="col-md-4">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control border-dark" name="first_name" required>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Middle Name</label>
+              <input type="text" class="form-control border-dark" name="middle_name">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control border-dark" name="last_name" required>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Age</label>
+              <input type="number" class="form-control border-dark" name="age" required>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Gender</label>
+              <select class="form-select border-dark" name="gender" required>
+                <option value="Female" selected>Female</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Contact</label>
+              <input type="text" class="form-control border-dark" name="contact" required>
+            </div>
+
+            <!-- Structured address -->
+            <div class="col-md-3">
+              <label class="form-label">Zone</label>
+              <input type="text" class="form-control border-dark" name="zone" required>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Barangay</label>
+              <input type="text" class="form-control border-dark" name="barangay" required>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control border-dark" name="city" required>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Province</label>
+              <input type="text" class="form-control border-dark" name="province" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control border-dark" name="email" required>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Footer buttons -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-danger">
+            <i class="bi bi-plus-circle me-1"></i> Add Midwife
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.querySelector('.btn.btn-primary').addEventListener('click', function(e) {
+  var modal = new bootstrap.Modal(document.getElementById('addMidwifeModal'));
+  modal.show();
+});
+</script>
+
 
 <script src="../js/dashboard.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

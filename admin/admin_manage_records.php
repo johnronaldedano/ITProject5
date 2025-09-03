@@ -30,7 +30,16 @@
                 <input type="text" class="form-control" placeholder="Search patient records..." id="searchRecords">
                 <button class="btn btn-primary" type="button" id="searchBtn"><i class="bi bi-search"></i></button>
             </div>
-            <button class="btn btn-light btn-sm" id="sortBtn"><i class="bi bi-gear"></i> Sort Records</button>       
+<div class="dropdown">
+  <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="bi bi-gear"></i> Sort Records
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+    <li><a class="dropdown-item" href="#">Sort by Tooth Extraction</a></li>
+    <li><a class="dropdown-item" href="#">Sort by Date</a></li>
+    <li><a class="dropdown-item" href="#">Sort by ID</a></li>
+  </ul>
+</div>
          </div>
 
         <div class="table-responsive">

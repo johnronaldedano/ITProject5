@@ -3,8 +3,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <nav id="sidebar" class="border-end">
     <div class="text-center py-3">
-        <img src="../images/icon.png" alt="Tooth Station Logo" width="100" class="mb-2"> 
-        <h4 class="fw-bold">Tooth Station Dental Clinic</h4>
+        <img src="../images/raiz.jpg" alt="Tooth Station Logo" width="100" class="mb-2"> 
+        <h4 class="fw-bold">Raiz-Rich Family Planning and Birth Clinic</h4>
     </div>
     <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_dashboard.php') echo ' active'; ?>" href="admin_dashboard.php"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
