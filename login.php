@@ -152,10 +152,6 @@
             $redirect_url = '';
             if ($user['systemrole'] === 'Admin') {
                 $redirect_url = 'admin/admin_dashboard.php';
-            } elseif ($user['systemrole'] === 'Doctor') {
-                $redirect_url = 'doctor/doctor_dashboard.php';
-            } elseif ($user['systemrole'] === 'Patient') {
-                $redirect_url = 'patient/patient_dashboard.php';
             }
         } else {
             $error = 'Invalid username or password.';
