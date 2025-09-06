@@ -9,7 +9,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_dashboard.php') echo ' active'; ?>" href="admin_dashboard.php"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
         <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_manage_patient.php') echo ' active'; ?>" href="admin_manage_patient.php"><i class="bi bi-person-lines-fill"></i> Manage Patients</a></li>
-        <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_manage_doctor.php') echo ' active'; ?>" href="admin_manage_doctor.php"><i class="bi bi-person-badge"></i> Manage Doctors</a></li>
+        <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_manage_doctor.php') echo ' active'; ?>" href="admin_manage_doctor.php"><i class="bi bi-person-badge"></i> Manage Midwife</a></li>
         <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_manage_revenue.php') echo ' active'; ?>" href="admin_manage_revenue.php"><i class="bi bi-cash-coin"></i> Manage Revenue</a></li>
         <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_manage_followups.php') echo ' active'; ?>" href="admin_manage_followups.php"><i class="bi bi-arrow-repeat"></i> Manage Follow-ups</a></li>
         <li class="nav-item"><a class="nav-link<?php if($current_page == 'admin_manage_appointments.php') echo ' active'; ?>" href="admin_manage_appointments.php"><i class="bi bi-calendar-check"></i>  Appointments </a></li>

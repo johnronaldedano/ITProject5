@@ -21,7 +21,7 @@
                      <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <span class="fw-bold fs-5">All Dentists:</span>
+            <span class="fw-bold fs-5">Total Midwife:</span>
             <span class="text-primary fw-bold"> 2 </span>
         </div>
         <button class="btn btn-primary"><i class="bi bi-person-plus me-2"></i>Add new Midwife</button>
